@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-acid: #8ed500;
+    --color-dark: #141414;
+    --color-gray-light: #f3f3f3;
+  }
+
+  body {
+    background-color: #141414;
+    color: #f3f3f3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  code, pre, .font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  ::selection {
+    background-color: #8ed500;
+    color: #141414;
+  }
+}
+
+/* 核心条纹纹理：来自用户提供的原版设计 */
+.pattern-hazard-original {
+  background: linear-gradient(135deg, #0000 18.75%, #f3f3f3 0 31.25%, #0000 0),
+    repeating-linear-gradient(45deg, #f3f3f3 -6.25% 6.25%, #141414 0 18.75%);
+  background-size: 60px 60px;
+  background-position: 0 0, 0 0;
+  background-color: #141414;
+}
+
+/* 荧光绿与深黑的反转斜纹 */
+.pattern-hazard-acid {
+  background: linear-gradient(135deg, #0000 18.75%, #8ed500 0 31.25%, #0000 0),
+    repeating-linear-gradient(45deg, #8ed500 -6.25% 6.25%, #141414 0 18.75%);
+  background-size: 60px 60px;
+  background-position: 0 0, 0 0;
+  background-color: #141414;
+}
+
+/* 微型点状与网格背景 */
+.bg-grid-tech {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(142, 213, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(142, 213, 0, 0.08) 1px, transparent 1px);
+}
+
+.bg-dots-tech {
+  background-image: radial-gradient(rgba(142, 213, 0, 0.25) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* 3D 变换支持工具类 */
+.perspective-800 {
+  perspective: 800px;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-1500 {
+  perspective: 1500px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.translate-z-20 {
+  transform: translate3d(0, 0, 20px);
+}
+
+.translate-z-30 {
+  transform: translate3d(0, 0, 30px);
+}
+
+.translate-z-50 {
+  transform: translate3d(0, 0, 50px);
+}
+
+.translate-z-80 {
+  transform: translate3d(0, 0, 80px);
+}
+
+/* 3D 卡片悬停斜纹滑动 */
+.card-hazard-hover {
+  transition: all 0.5s ease-in-out;
+}
+
+.card-hazard-hover:hover {
+  background-position: -100px 100px, -100px 100px;
+}
+
+/* 经典野兽派硬阴影 */
+.shadow-brutal-acid {
+  box-shadow: 6px 6px 0px #8ed500;
+}
+
+.shadow-brutal-black {
+  box-shadow: 6px 6px 0px #141414;
+}
+
+.shadow-brutal-white {
+  box-shadow: 6px 6px 0px #f3f3f3;
+}
+
+.shadow-card-floating {
+  box-shadow: rgba(142, 142, 142, 0.3) 0px 30px 30px -10px;
+}
+
+/* 跑马灯动画 */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8ed500;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a4f200;
+}
