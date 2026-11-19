@@ -63,19 +63,19 @@ export const CallToAction: React.FC = () => {
             首发全球限量 500 台独立编号样机。附赠 Johannajensen 专属客制化激光雕刻背板、三款触觉阻尼旋钮替换帽及终身开源固件 OTA 特权。
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-5">
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-5">
             <button
               onClick={() => alert(`Batch // 001 Reservation Confirmed!\nDirect inquiries: ${authorEmail}`)}
-              className="px-8 py-5 bg-[#141414] text-[#8ed500] font-mono text-sm font-black uppercase border-2 border-[#141414] shadow-[6px_6px_0px_#f3f3f3] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex items-center gap-3 cursor-pointer"
+              className="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-5 bg-[#141414] text-[#8ed500] font-mono text-xs sm:text-sm font-black uppercase border-2 border-[#141414] shadow-[4px_4px_0px_#f3f3f3] sm:shadow-[6px_6px_0px_#f3f3f3] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex items-center justify-center gap-2.5 cursor-pointer"
             >
-              <ShoppingBag className="w-5 h-5" />
+              <ShoppingBag className="w-4 h-4 sm:w-5 sm:h-5" />
               <span>PRE-ORDER NOW — $299 USD</span>
-              <ArrowUpRight className="w-5 h-5" />
+              <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
 
             <a
               href={`mailto:${authorEmail}`}
-              className="px-8 py-5 bg-transparent text-[#141414] font-mono text-sm font-black uppercase border-2 border-[#141414] hover:bg-[#141414] hover:text-white transition-all flex items-center gap-2"
+              className="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-5 bg-transparent text-[#141414] font-mono text-xs sm:text-sm font-black uppercase border-2 border-[#141414] hover:bg-[#141414] hover:text-white transition-all flex items-center justify-center gap-2"
             >
               <Mail className="w-4 h-4" />
               <span>CONTACT ARCHITECT</span>

@@ -268,10 +268,10 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* CTA Group */}
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4">
             <a
               href="#preorder"
-              className="px-6 py-4 bg-[#8ed500] text-[#141414] font-black font-mono text-sm uppercase border-2 border-[#141414] shadow-brutal-white hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex items-center gap-2"
+              className="px-5 sm:px-6 py-3.5 sm:py-4 bg-[#8ed500] text-[#141414] font-black font-mono text-xs sm:text-sm uppercase border-2 border-[#141414] shadow-brutal-white hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all flex items-center justify-center gap-2"
             >
               <Cpu className="w-4 h-4" />
               <span>PRE-ORDER BATCH 001</span>
@@ -279,7 +279,7 @@ export const Hero: React.FC = () => {
 
             <a
               href="#features"
-              className="px-6 py-4 bg-[#141414] text-[#f3f3f3] font-black font-mono text-sm uppercase border-2 border-[#333] hover:border-[#8ed500] hover:text-[#8ed500] transition-colors flex items-center gap-2"
+              className="px-5 sm:px-6 py-3.5 sm:py-4 bg-[#141414] text-[#f3f3f3] font-black font-mono text-xs sm:text-sm uppercase border-2 border-[#333] hover:border-[#8ed500] hover:text-[#8ed500] transition-colors flex items-center justify-center gap-2"
             >
               <span>BIDIRECTIONAL PARALLAX</span>
               <CornerDownRight className="w-4 h-4" />
@@ -287,23 +287,23 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Stats Bar */}
-          <div className="mt-12 pt-8 border-t border-[#262626] grid grid-cols-3 gap-4">
-            <div className="hero-stat-item border-l-2 border-[#8ed500] pl-3">
-              <div className="font-mono text-2xl font-black text-[#f3f3f3]">0.02ms</div>
-              <div className="font-mono text-[10px] text-[#888] uppercase tracking-wider">
-                Haptic Dial Latency
+          <div className="mt-10 sm:mt-12 pt-6 sm:pt-8 border-t border-[#262626] grid grid-cols-3 gap-2 sm:gap-4">
+            <div className="hero-stat-item border-l-2 border-[#8ed500] pl-2 sm:pl-3">
+              <div className="font-mono text-lg sm:text-2xl font-black text-[#f3f3f3]">0.02ms</div>
+              <div className="font-mono text-[9px] sm:text-[10px] text-[#888] uppercase tracking-wider truncate">
+                Dial Latency
               </div>
             </div>
-            <div className="hero-stat-item border-l-2 border-[#8ed500] pl-3">
-              <div className="font-mono text-2xl font-black text-[#8ed500]">32 TOPS</div>
-              <div className="font-mono text-[10px] text-[#888] uppercase tracking-wider">
-                Edge NPU Power
+            <div className="hero-stat-item border-l-2 border-[#8ed500] pl-2 sm:pl-3">
+              <div className="font-mono text-lg sm:text-2xl font-black text-[#8ed500]">32 TOPS</div>
+              <div className="font-mono text-[9px] sm:text-[10px] text-[#888] uppercase tracking-wider truncate">
+                Edge NPU
               </div>
             </div>
-            <div className="hero-stat-item border-l-2 border-[#8ed500] pl-3">
-              <div className="font-mono text-2xl font-black text-[#f3f3f3]">48 HRS</div>
-              <div className="font-mono text-[10px] text-[#888] uppercase tracking-wider">
-                Continuous Battery
+            <div className="hero-stat-item border-l-2 border-[#8ed500] pl-2 sm:pl-3">
+              <div className="font-mono text-lg sm:text-2xl font-black text-[#f3f3f3]">48 HRS</div>
+              <div className="font-mono text-[9px] sm:text-[10px] text-[#888] uppercase tracking-wider truncate">
+                Battery Life
               </div>
             </div>
           </div>

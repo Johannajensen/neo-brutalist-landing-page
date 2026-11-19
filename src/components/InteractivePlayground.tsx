@@ -95,10 +95,10 @@ const k01Spec = {
         </div>
 
         {/* 主控制台网格 */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           {/* 左侧控制滑块仪表盘 */}
-          <div className="lg:col-span-6 p-6 sm:p-8 bg-[#181818] border-2 border-[#333] shadow-brutal-acid space-y-6">
-            <div className="flex items-center justify-between pb-4 border-b border-[#2a2a2a]">
+          <div className="lg:col-span-6 p-4 sm:p-8 bg-[#181818] border-2 border-[#333] shadow-brutal-acid space-y-5 sm:space-y-6">
+            <div className="flex items-center justify-between pb-3 sm:pb-4 border-b border-[#2a2a2a]">
               <span className="font-mono text-xs font-black text-[#8ed500] flex items-center gap-2">
                 <Sliders className="w-4 h-4" />
                 CAD CALIBRATION MATRIX
@@ -273,14 +273,14 @@ const k01Spec = {
           {/* 右侧：实时渲染的硬件 CAD 爆炸图展示 */}
           <div
             ref={cardViewerRef}
-            className="lg:col-span-6 flex flex-col items-center justify-center min-h-[460px] p-8 bg-[#101010] border-2 border-dashed border-[#333] relative will-change-transform"
+            className="lg:col-span-6 flex flex-col items-center justify-center min-h-[380px] sm:min-h-[460px] p-4 sm:p-8 bg-[#101010] border-2 border-dashed border-[#333] relative will-change-transform overflow-hidden"
           >
-            <div className="absolute top-4 left-4 font-mono text-[10px] text-[#666]">
+            <div className="absolute top-3 left-3 sm:top-4 sm:left-4 font-mono text-[9px] sm:text-[10px] text-[#666]">
               CAD ENGINE: CSS-PRESERVE-3D // LIVE
             </div>
 
             <div
-              className="w-[300px] select-none"
+              className="w-full max-w-[280px] sm:max-w-[300px] select-none mx-auto"
               style={{
                 perspective: `${perspective}px`,
               }}
